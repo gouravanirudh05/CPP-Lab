@@ -1,0 +1,23 @@
+total species 0
+mammal 0
+reptile 0
+bird 0
+aquatic 0
+Error: Invalid command format for 'add'. Expected format: add <category> <name> <count> <attribute>
+Count must be greater than zero.
+Error: Invalid command format for 'add'. Expected format: add <category> <name> <count> <attribute>
+Error: Attempt to add with different attribute.
+Error: Species not found.
+Error: Delete count cannot be negative or zero
+bird 1
+kingfisher 5 grain
+Error: Delete count greater than existing count.
+bird 0
+total species 3
+mammal 1
+lion 2 carnivore
+reptile 1
+iguana 4 medium
+bird 0
+aquatic 1
+hippo 9 plants
