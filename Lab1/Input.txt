@@ -1,0 +1,17 @@
+showVenues
+addEvent
+addVenue "Skate Park" "Bangalore" 10000
+addVenue "Football" "Mumbai" 20000
+addVenue "Nice Stadium" "Nice" 30000
+addVenue
+showVenues
+addEvent "Golf Park" 14 2 6 "Golf"
+delEvent "Golf Park" 14 2 "Golf"
+delVenue "Skate Park" 
+addEvent "Nice Stadium" 5 6 10 "Football"
+addEvent "Nice Stadium" 5 13 17 "Football"
+addEvent "Nice Stadium" 10 17 20 "Football"
+showEvents "Nice Stadium" 5
+showEvents "Nice Stadium" 6
+showCalendar "Nice Stadium"
+End
