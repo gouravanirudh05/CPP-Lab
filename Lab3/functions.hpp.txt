@@ -1,0 +1,113 @@
+#include <ctime>
+#include <string>
+#include <vector>
+
+#define MAX_COMMAND_SIZE 8
+
+using namespace std;
+
+class Time {
+public:
+	int hour, minute;
+
+	Time(int hour, int minute);
+	Time();
+
+	bool operator>=(const Time &other);
+	bool operator>(const Time &other);
+	bool operator==(const Time &other);
+	int operator-(const Time &other) const;
+	friend ostream &operator<<(ostream &os, const Time &time);
+};
+
+class Date {
+public:
+	int year, month, day;
+
+	Date(int year, int month, int day);
+	Date(); // for the sake of completeness
+
+	bool operator>=(const Date &other);
+	bool operator<=(const Date &other);
+	bool operator>(const Date &other);
+	bool operator<(const Date &other);
+	bool operator==(const Date &other);
+	Date operator++(int);
+	int operator-(const Date& other) const;
+	friend ostream &operator<<(ostream &os, const Date &date);
+};
+
+class Event {
+public:
+  Event(Date date, Time fromHour, Time toHour, string eventName);
+
+  string name;
+  Date date;
+  Time fromHour, toHour;
+};
+
+class Day {
+public:
+  Day(Date date);
+
+  int addEvent(Time fromHour, Time toHour, string eventName);
+  int deleteEvent(Time fromHour, string eventName);
+  int showEvents();
+
+  int numOfEvents;
+  vector<Event *> day;
+  Date date;
+};
+
+class Congregate;
+
+class Venue {
+public:
+  static vector<Venue *> venues;
+  static int showVenues(vector<string> &inputLocation);
+  static int searchVenue(string ven, string country, Venue *&ptr);
+
+  Venue(string venueName, string country, vector<string> location, int capacity);
+
+  int showCalendar(Date startDate, Date endDate);
+  int checkReservation(Date startDate, Date endDate);
+  int showEvents(Date date);
+
+  string name;
+  string country;
+  vector<string> location;
+  int capacity;
+  vector<Day *> calendar;
+	// vector of congregations that reserved this venue
+  vector<Congregate *> congregations;
+};
+
+class Congregate {
+public:
+  static vector<Congregate *> congregates;
+	static int searchCongregate(string name, Congregate *&ptr);
+  Congregate(string name, string type, Date startDate, Date endDate);
+
+  // venue methods
+  int reserveVenue(Venue &ven);
+  int freeVenue(Venue &ven);
+  int showReserved();
+
+  // event methods
+  int addEvent(Venue &ven, Date date, Time fromHour, Time toHour, string eventName);
+  int deleteEvent(Venue &ven, Date date, Time fromHour, string eventName);
+  int showCalendar(Venue &ven);
+
+  vector<Venue *> venues;
+  string type;
+  string name;
+  Date startDate, endDate;
+};
+
+int tokenize(vector<string> &arr);
+int daysFromYear0(int year, int month, int day);
+bool isLeapYear(int year);
+int daysInMonth(int year, int month);
+int checkDate(string date, Date *&ptr);
+int checkTime(string time, Time *&ptr);
+int checkAddress(string address, vector<string> &, bool flag = true);

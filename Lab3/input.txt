@@ -1,0 +1,4 @@
+addCongregation "Paris Olympics 2024" "Games" "2024-10-26" "2024-10-28"
+addCongregation "Summer Fest 2025" "Concert" "2025-06-01" "2025-06-15"
+showCongregations
+End

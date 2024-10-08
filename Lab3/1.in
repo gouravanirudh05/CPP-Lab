@@ -1,0 +1,22 @@
+addCongregation "Paris Olympics 2024" "Games" "2024-10-26" "2024-10-28"
+addCongregation "Summer Fest 2025" "Concert" "2024-11-01" "2024-11-15"
+showCongregations
+addVenue "Stade de France" "Bandra-East:Saint-Denis:Ile-de-France:932100:France" 80000
+addVenue "Wembley Stadium" "Kormangala:London:England:HA9000:UK" 90000
+addVenue "Olympic Stadium" "JPNagar:Montreal:Quebec:H1V3N7:Canada" 60000
+showVenues "London:England::UK"
+reserveVenue "Stade de France" "France" "Paris Olympics 2024"
+showReserved "Paris Olympics 2024"
+addEvent "Paris Olympics 2024" "Stade de France" "France" "2024-10-27" "09:00" "11:00" "Opening Ceremony"
+addEvent "Paris Olympics 2024" "Stade de France" "France" "2024-10-27" "11:30" "13:30" "Athletics - Morning Session"
+addEvent "Paris Olympics 2024" "Wembley Stadium" "UK" "2024-10-28" "15:00" "17:00" "Football - Quarter Final"
+showEvents "Stade de France" "France" "2024-10-27"
+deleteEvent "Paris Olympics 2024" "Stade de France" "France" "2024-10-27" "11:30" "Athletics - Morning Session"
+showEvents "Stade de France" "France" "2024-10-27"
+showCalendar "Paris Olympics 2024" "Stade de France" "France"
+freeVenue "Stade de France" "France" "Paris Olympics 2024"
+deleteVenue "Stade de France" "France"
+deleteVenue "Stade de France" "France"
+deleteCongregation "Summer Fest 2025"
+showCongregations
+End

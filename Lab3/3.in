@@ -1,0 +1,27 @@
+addCongregation "World Chess Championship 2024" "Games" "2024-11-01" "2024-11-03"
+addCongregation "TechCon 2025" "Conference" "2025-03-15" "2025-03-17"
+addCongregation "Global Music Festival" "Concert" "2024-12-01" "2024-12-05"
+showCongregations
+addVenue "Reykjavik Arena" "RA:Laugardalsholl:Reykjavik:101:Iceland" 5000
+addVenue "Silicon Valley Convention Center" "SVCC:San Jose:California:95110:USA" 15000
+addVenue "Apple Dome" "AD:San Jose:California:95111:USA" 20000
+addVenue "Wembley Stadium" "LD:London:Greater London:HA9 0WS:UK" 90000
+showVenues "San Jose:California::USA"
+reserveVenue "Reykjavik Arena" "Iceland" "World Chess Championship 2024"
+reserveVenue "Silicon Valley Convention Center" "USA" "TechCon 2025"
+reserveVenue "Wembley Stadium" "UK" "Global Music Festival"
+showReserved "World Chess Championship 2024"
+addEvent "World Chess Championship 2024" "Reykjavik Arena" "Iceland" "2024-11-01" "14:00" "18:00" "Opening Ceremony"
+addEvent "World Chess Championship 2024" "Reykjavik Arena" "Iceland" "2024-11-02" "10:00" "14:00" "Round 1"
+addEvent "TechCon 2025" "Silicon Valley Convention Center" "USA" "2025-03-15" "09:00" "17:00" "Keynote Speech"
+addEvent "Global Music Festival" "Wembley Stadium" "UK" "2024-12-01" "18:00" "23:00" "Rock Night"
+showEvents "Reykjavik Arena" "Iceland" "2024-11-01"
+showCalendar "World Chess Championship 2024" "Reykjavik Arena" "Iceland"
+deleteEvent "Global Music Festival" "Wembley Stadium" "UK" "2024-12-01" "18:00" "Rock Night"
+showEvents "Wembley Stadium" "UK" "2024-12-01"
+freeVenue "Wembley Stadium" "UK" "Global Music Festival"
+deleteVenue "Wembley Stadium" "UK"
+deleteVenue "Wembley Stadium" "UK"
+deleteCongregation "Global Music Festival"
+showCongregations
+End
