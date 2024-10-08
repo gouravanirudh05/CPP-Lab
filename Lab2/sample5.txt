@@ -1,0 +1,12 @@
+showVenues
+addVenue "Pont Alexandre III" "Paris" 10000
+addVenue "Porte de La Chapelle Arena" "Paris" 10000
+addEvent "Pont Alexandre III" 23 7 11 "Cycling Road"
+addEvent "Pont Alexandre III" 35 2 3 "Swimming"
+addEvent "Pont Alexandre III" 10 5 5 "Tiathloan"
+addEvent "Porte de La Chapelle Arena" 7 10 15 "Badminton"
+addEvent "Porte de La Chapelle Arena" 15 22 25 "Gymnastics"
+addEvent "Porte de La Chapelle Arena" 9 8 3 "Boxing"
+showCalendar "Pont Alexandre III"
+showCalendar "Porte de La Chapelle Arena"
+End

@@ -1,0 +1,19 @@
+showVenues
+addVenue "Aquatics Centre" "Saint-Denis" 10000
+addVenue "Invalides" "Paris" 20000
+addVenue "Lyon Stadium" "Decines" 30000
+showVenues
+delVenue "Lyon Stadium"
+showVenues
+addEvent "Aquatics Centre" 1 2 4 "Artistic Swimming"
+addEvent "Aquatics Centre" 3 5 6 "Diving"
+addEvent "Aquatics Centre" 30 8 10 "Water Polo"
+addEvent "Invalides" 5 11 12 "Archery"
+addEvent "Invalides" 9 14 16 "Athletics"
+addEvent "Invalides" 11 5 7 "Cycling Road"
+showEvents "Invalides" 5
+showEvents "Invalides" 4
+delEvent "Aquatics Centre" 30 8 "Water Polo"
+showEvents "Aquatics Centre" 30
+showCalendar "Aquatics Centre"
+End

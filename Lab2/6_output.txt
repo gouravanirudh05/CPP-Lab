@@ -1,0 +1,58 @@
+0
+0
+0
+0
+3
+Aquatics Centre Saint-Denis 10000
+Invalides Paris 20000
+Lyon Stadium Decines 30000
+0
+2
+Aquatics Centre Saint-Denis 10000
+Invalides Paris 20000
+0
+0
+0
+0
+0
+0
+2
+Cycling 1 3
+Athletics 8 10
+0
+1
+Diving 5 6
+3
+1 1
+Archery 2 4
+2 0
+3 0
+4 0
+5 2
+Cycling 1 3
+Athletics 8 10
+6 0
+7 0
+8 0
+9 0
+10 0
+11 0
+12 0
+13 0
+14 0
+15 0
+16 0
+17 0
+18 0
+19 0
+20 0
+21 0
+22 0
+23 0
+24 0
+25 0
+26 0
+27 0
+28 0
+29 0
+30 0
